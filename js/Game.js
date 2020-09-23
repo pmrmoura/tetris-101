@@ -39,11 +39,9 @@ class Game {
     }
 
     clear(){
-        let grid = document.querySelector(".grid-tetris");
-        while(grid.firstChild){
-            grid.removeChild(grid.firstChild);
-        }
+        this.board.clear();
     }
+    
     setScore(value){this.board.score = value}
     setIsplaying(amIPlaying){ this.isplaying = amIPlaying; }
     getIsPlaying(){ return this.isplaying; }
