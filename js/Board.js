@@ -95,4 +95,11 @@ class Board {
     rotate(){
         this.tetrominos.rotate();
     }
+
+    clear(){
+        let grid = document.querySelector(".grid-tetris");
+        while(grid.firstChild){
+            grid.removeChild(grid.firstChild);
+        }
+    }
 }
