@@ -20,7 +20,6 @@ clear.addEventListener("click", (event) => {
 
 window.addEventListener("keydown", (event) => { 
     const { key } = event; 
-
     switch(key){
         case "ArrowLeft":
             return game.moveLeft();
@@ -29,7 +28,9 @@ window.addEventListener("keydown", (event) => {
         case "ArrowDown":
             return game.moveDown();
         case " ":
-            return game.rotate();    
+            return game.rotate();
+        case "ArrowUp":
+            return game.rotate();      
     }
 })
 

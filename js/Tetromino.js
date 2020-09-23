@@ -136,7 +136,6 @@ class Tetromino {
         })
 
         upNextTetrominos[this.nextRandomTetromino].forEach( index => {
-            console.log(index, 'index')
             displaySquare[displayIndex + index].classList.add('tetromino')
             displaySquare[displayIndex + index].style.backgroundColor = this.colors[this.nextRandomTetromino]
         })
