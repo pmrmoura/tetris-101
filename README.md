@@ -9,3 +9,5 @@ Um jogo de Tetris desenvolvido para o hackenge (Hackaton + Challenge) da discipl
 - Pedro da Matta Ribeiro Moura
 - Sofia Melo Lucena
 
+## Link para jogar
+https://pmrmoura.github.io/tetris-101/
