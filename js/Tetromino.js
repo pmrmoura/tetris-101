@@ -133,11 +133,13 @@ class Tetromino {
         displaySquare.forEach(square => {
             square.classList.remove('tetromino')
             square.style.backgroundColor = ''
+            square.style.border = ''
         })
 
         upNextTetrominos[this.nextRandomTetromino].forEach( index => {
             displaySquare[displayIndex + index].classList.add('tetromino')
             displaySquare[displayIndex + index].style.backgroundColor = this.colors[this.nextRandomTetromino]
+            displaySquare[displayIndex + index].style.border = "1px solid black"
         })
     }
 
