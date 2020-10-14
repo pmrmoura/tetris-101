@@ -8,6 +8,7 @@ class Board {
         this.tetrominos = new Tetromino(this.squares,4,0);
         this.tetrominos.draw();
         this.score = 0;
+        this.tetrominos.showNextTetromino();
     }
 
     _createBoard(){
@@ -101,5 +102,12 @@ class Board {
         while(grid.firstChild){
             grid.removeChild(grid.firstChild);
         }
+        const displaySquare = document.querySelectorAll('.mini-grid div')
+
+        displaySquare.forEach(square => {
+            square.classList.remove('tetromino')
+            square.style.backgroundColor = ''
+            square.style.border = ''
+        })
     }
 }
