@@ -1,15 +1,31 @@
-# tetris-101
+# tests-101
 
 ## O projeto
-Um jogo de Tetris desenvolvido para o hackenge (Hackaton + Challenge) da disciplina de Engenharia de Software - IF977 de Sistemas de Informação, CIn UFPE
-
-Acesse nosso artigo do [Medium](https://medium.com/@pedrodamatta3/tetris-101-hackenge-61bedb817fcc) para mais detalhes
+Testes feitos com cypress de um jogo de Tetris desenvolvido para o hackenge (Hackaton + Challenge) da disciplina de Engenharia de Software - IF977 de Sistemas de Informação, CIn UFPE
 
 ## Integrantes
 - Alex Paulo Ferreira Damascena
 - Felipe De Carvalho Vasconcelos
 - Pedro da Matta Ribeiro Moura
 - Sofia Melo Lucena
+
+## Como rodar os testes
+
+```
+- Clone esse repositorio
+
+- Instalar dependências do projeto
+  npm install
+
+- Executar o Cypress.io
+  npx cypress open
+```
+
+## Explicando o projeto
+### Existem três arquivos de testes:
+- render.spec.js : Testa se os componentes estão aparecendo na tela como esperado
+- movement.spec.js : Testa as ações que são feitos pelo teclado
+- features.spec.js : Testa as ações dos componentes
 
 ## Link para jogar
 https://pmrmoura.github.io/tetris-101/
