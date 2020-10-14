@@ -1,6 +1,7 @@
 let start = document.querySelector("#start-tetris-game");
 let clear = document.querySelector("#clear-tetris-game");
 var isplaying = false;
+var game;
 
 start.addEventListener("click" , (event) => {
     if(!isplaying){
@@ -11,6 +12,8 @@ start.addEventListener("click" , (event) => {
 
 clear.addEventListener("click", (event) => {
     if(isplaying){
+        clearInterval(game.interval)
+        game.interval = null
         game.clear();
         isplaying = false;
         game.setScore(0)

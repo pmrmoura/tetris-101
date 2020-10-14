@@ -37,13 +37,16 @@ class Tetromino {
     }
 
     _arriveAtEndAndCreateAnotherTetromino() {
-        this.currentTetromino.forEach(index => this.squares[this.currentPosition + index].classList.add("taken"));
-        this.setRandomTetrominos();
-        this.setTetromino();
-        this.setPosition(4);
-        this.showNextTetromino();
-        if (!this.canTetrominoMoveDown()) {
-            this.draw();
+        const displaySquare = Array.from(document.querySelectorAll('.mini-grid div'))
+        if(displaySquare.some(square => square.classList.contains('tetromino'))){
+            this.currentTetromino.forEach(index => this.squares[this.currentPosition + index].classList.add("taken"));
+            this.setRandomTetrominos();
+            this.setTetromino();
+            this.setPosition(4);
+            this.showNextTetromino();
+            if (!this.canTetrominoMoveDown()) {
+                this.draw();
+            }
         }
     }
 

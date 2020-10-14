@@ -4,7 +4,7 @@ class Game {
     constructor(){
         this.board = new Board();
         this.isplaying = true;
-        this.interval;
+        this.interval= null;
         this.play();
     }
 
